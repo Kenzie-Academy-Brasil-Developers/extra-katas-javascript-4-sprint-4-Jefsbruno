@@ -10,6 +10,8 @@ const bestThing = "The best thing about a boolean is even if you are wrong you a
 
 function kata1() {
 
+    let new_got = gotCitiesCSV
+
     let header = document.createElement('div')
     header.innerText = 'Kata - 01'
     document.body.appendChild(header)
@@ -17,6 +19,9 @@ function kata1() {
     let line_results = document.createElement('p')
     line_results.innerText = JSON.stringify(gotCitiesCSV)
     document.body.appendChild(line_results)
+
+    console.log(new_got)
+    return new_got
 }
 
 kata1()
@@ -24,7 +29,7 @@ kata1()
 
 function kata2() {
 
-
+    let new_best = bestThing
 
     let header = document.createElement('div')
     header.innerText = ' Kata - 02'
@@ -34,6 +39,8 @@ function kata2() {
     line_results.innerText = JSON.stringify(bestThing)
     document.body.appendChild(line_results)
 
+    console.log(new_best)
+    return new_best
 }
 
 kata2()
@@ -52,6 +59,9 @@ function kata3() {
     line_results.innerText =  JSON.stringify(new_array_got)
     document.body.appendChild(line_results)
 
+    console.log(new_array_got)
+    return new_array_got
+
 }
 
 kata3()
@@ -59,7 +69,7 @@ kata3()
 
 function kata4(){
 
- 
+    let new_got = lotrCitiesArray
 
     let header = document.createElement('div')
     header.innerText = 'Kata - 04'
@@ -69,7 +79,8 @@ function kata4(){
     line_results.innerText =  JSON.stringify(lotrCitiesArray)
     document.body.appendChild(line_results)
 
-
+    console.log(new_got)
+    return new_got
 
 
 }
@@ -93,8 +104,8 @@ function kata5(){
     line_results.innerText =  JSON.stringify(results)
     document.body.appendChild(line_results)
 
-
-
+    console.log(results)
+    return results
 
 }
 
@@ -117,8 +128,8 @@ function kata6(){
     line_results.innerText =  JSON.stringify(results)
     document.body.appendChild(line_results)
 
-
-
+    console.log(results)
+    return results
 
 }
 kata6()
@@ -139,6 +150,8 @@ function kata7(){
     line_results.innerText =  JSON.stringify(results)
     document.body.appendChild(line_results)
 
+    console.log(results)
+    return results
 
 
 
@@ -155,13 +168,16 @@ function kata8(){
     document.body.appendChild(header)
 
     lotrCitiesArray.splice(2,1)
+    let results = lotrCitiesArray
 
     let line_results = document.createElement('p')
-    line_results.innerText =  JSON.stringify(lotrCitiesArray)
+    line_results.innerText =  JSON.stringify(results)
     document.body.appendChild(line_results)
     
 
 
+    console.log(results)
+    return results
 
 
 }
@@ -175,10 +191,15 @@ function kata9(){
     document.body.appendChild(header)
 
     lotrCitiesArray.splice(4,8)
+    let results = lotrCitiesArray
 
     let line_results = document.createElement('p')
-    line_results.innerText =  JSON.stringify(lotrCitiesArray)
+    line_results.innerText =  JSON.stringify(results)
     document.body.appendChild(line_results)
+    
+    console.log(results)
+    return results
+
     
 
 
@@ -192,12 +213,15 @@ function kata10(){
     header.innerText = 'Kata - 10'
     document.body.appendChild(header)
 
-    lotrCitiesArray.splice(2,0, 'Rohan')
+     lotrCitiesArray.splice(2,0, 'Rohan')
+     let results = lotrCitiesArray
 
     let line_results = document.createElement('p')
-    line_results.innerText =  JSON.stringify(lotrCitiesArray)
+    line_results.innerText =  JSON.stringify(results)
     document.body.appendChild(line_results)
     
+    console.log(results)
+    return results
 
 
 }
@@ -211,12 +235,14 @@ function kata11(){
     document.body.appendChild(header)
 
     lotrCitiesArray.splice(5,0, 'Deadest Marshes')
+    let results = lotrCitiesArray
 
     let line_results = document.createElement('p')
     line_results.innerText =  JSON.stringify(lotrCitiesArray)
     document.body.appendChild(line_results)
     
-
+    console.log(results)
+    return results
 
 }
 kata11()
@@ -227,12 +253,14 @@ function kata12(){
     header.innerText = 'Kata - 12'
     document.body.appendChild(header)
 
-    let results =  bestThing.slice(0,14, 'Deadest Marshes')
+    let results =  bestThing.slice(0,14, )
 
     let line_results = document.createElement('p')
     line_results.innerText =  JSON.stringify(results)
     document.body.appendChild(line_results)
     
+    console.log(results)
+    return results
 
 
 }
@@ -250,6 +278,8 @@ function kata13(){
     line_results.innerText =  JSON.stringify(results)
     document.body.appendChild(line_results)
     
+    console.log(results)
+    return results
 
     
 }
@@ -267,7 +297,8 @@ function kata14(){
     line_results.innerText =  JSON.stringify(results)
     document.body.appendChild(line_results)
     
-
+    console.log(results)
+    return results
     
 }
 kata14()
@@ -283,6 +314,8 @@ function kata15(){
     line_results.innerText =  JSON.stringify(results)
     document.body.appendChild(line_results)
     
+    console.log(results)
+    return results
 
     
 }
@@ -300,7 +333,8 @@ function kata16(){
     line_results.innerText =  JSON.stringify(results)
     document.body.appendChild(line_results)
     
-
+    console.log(results)
+    return results
     
 }
 kata16()
@@ -312,12 +346,14 @@ function kata17(){
     document.body.appendChild(header)
 
     lotrCitiesArray.pop()
+    let results = lotrCitiesArray
 
     let line_results = document.createElement('p')
-    line_results.innerText =  JSON.stringify(lotrCitiesArray)
+    line_results.innerText =  JSON.stringify(results)
     document.body.appendChild(line_results)
     
-
+    console.log(results)
+    return results
     
 }
 kata17()
@@ -329,12 +365,14 @@ function kata18(){
     document.body.appendChild(header)
 
     lotrCitiesArray.push('Deadest Marshes')
+    let results = lotrCitiesArray
 
     let line_results = document.createElement('p')
-    line_results.innerText =  JSON.stringify(lotrCitiesArray)
+    line_results.innerText =  JSON.stringify(results)
     document.body.appendChild(line_results)
     
-
+    console.log(results)
+    return results
     
 }
 kata18()
@@ -346,12 +384,14 @@ function kata19(){
     document.body.appendChild(header)
 
     lotrCitiesArray.shift()
+    let results = lotrCitiesArray
 
     let line_results = document.createElement('p')
-    line_results.innerText =  JSON.stringify(lotrCitiesArray)
+    line_results.innerText =  JSON.stringify(results)
     document.body.appendChild(line_results)
     
-
+    console.log(results)
+    return results
     
 }
 kata19()
@@ -363,12 +403,14 @@ function kata20(){
     document.body.appendChild(header)
 
     lotrCitiesArray.unshift('Mordor')
+    let results = lotrCitiesArray
 
     let line_results = document.createElement('p')
-    line_results.innerText =  JSON.stringify(lotrCitiesArray)
+    line_results.innerText =  JSON.stringify(results)
     document.body.appendChild(line_results)
     
-
+    console.log(results)
+    return results
     
 }
 kata20()
@@ -382,11 +424,15 @@ function bonusUm(){
     header.innerText = 'Kata Bônus - 01'
     document.body.appendChild(header)
 
+    let results = new_best.indexOf('only')
     
     let line_results = document.createElement('p')
-    line_results.innerText =  JSON.stringify(new_best.indexOf('only'))
+    line_results.innerText =  JSON.stringify(results)
     document.body.appendChild(line_results)
-
+    
+    console.log(results)
+    return results
+    
 
 }
 
@@ -400,10 +446,14 @@ function bonusDois(){
     header.innerText = 'Kata Bônus - 02'
     document.body.appendChild(header)
 
+    let results = new_best.length-1
     
     let line_results = document.createElement('p')
-    line_results.innerText =  JSON.stringify(new_best.length-1)
+    line_results.innerText =  JSON.stringify(results)
     document.body.appendChild(line_results)
+
+    console.log(results)
+    return results
 
 
 }
@@ -435,6 +485,8 @@ function bonustres(){
     line_results.innerText =  JSON.stringify(results)
     document.body.appendChild(line_results)
 
+    console.log(results)
+    return results
 
 }
 bonustres()
@@ -466,6 +518,9 @@ function bonusquatro(){
     document.body.appendChild(line_results)
 
 
+    console.log(results)
+    return results
+
 }
 bonusquatro()
 
@@ -495,7 +550,8 @@ function bonusCinco(){
     line_results.innerText =  JSON.stringify(results)
     document.body.appendChild(line_results)
 
-
+    console.log(results)
+    return results
 }
 bonusCinco()
 
@@ -524,6 +580,9 @@ function bonusSeis(){
     line_results.innerText =  JSON.stringify(results)
     document.body.appendChild(line_results)
 
+    console.log(results)
+    return results
+
 
 }
 bonusSeis()
@@ -550,6 +609,9 @@ function bonusSete(){
     let line_results = document.createElement('p')
     line_results.innerText =  JSON.stringify(results)
     document.body.appendChild(line_results)
+
+    console.log(results)
+    return results
 
 
 }
@@ -600,6 +662,9 @@ function bonusNove(){
     line_results.innerText =  JSON.stringify(results)
     document.body.appendChild(line_results)
 
+    console.log(results)
+    return results
+
 
 }
 bonusNove()
@@ -643,26 +708,21 @@ function bonusDoze(){
     header.innerText = 'Kata Bônus - 12'
     document.body.appendChild(header)
 
-    lotrCitiesArray.sort();
+  
+    
+   
+    let sorted = lotrCitiesArray.sort((a,b)=>{
+        if (a.length < b.length) return -1
+        if (b.length > b.length) return 1
+    })
 
-    let results = []
-
-    for(let i = 0; i<lotrCitiesArray.length;i++){
-
-        for(let j = i+1; j<lotrCitiesArray.length;j++){
-
-            if(!lotrCitiesArray[i].includes(results) && lotrCitiesArray[i]<=lotrCitiesArray[j]){
-                results.push(lotrCitiesArray[i])
-            }else{results.push(lotrCitiesArray[j])}
-        }
-    }
+   console.log(sorted)
 
 
     let line_results = document.createElement('p')
-    line_results.innerText =  JSON.stringify(results)
+    line_results.innerText =  JSON.stringify(sorted)
     document.body.appendChild(line_results)
 
-    console.log(results)
-    
+    return sorted
 }
 bonusDoze()
