@@ -372,3 +372,297 @@ function kata20(){
     
 }
 kata20()
+
+
+function bonusUm(){
+
+    let new_best = bestThing.split(' ')
+
+    let header = document.createElement('div')
+    header.innerText = 'Kata Bônus - 01'
+    document.body.appendChild(header)
+
+    
+    let line_results = document.createElement('p')
+    line_results.innerText =  JSON.stringify(new_best.indexOf('only'))
+    document.body.appendChild(line_results)
+
+
+}
+
+bonusUm()
+
+function bonusDois(){
+
+    let new_best = bestThing.split(' ')
+
+    let header = document.createElement('div')
+    header.innerText = 'Kata Bônus - 02'
+    document.body.appendChild(header)
+
+    
+    let line_results = document.createElement('p')
+    line_results.innerText =  JSON.stringify(new_best.length-1)
+    document.body.appendChild(line_results)
+
+
+}
+bonusDois()
+
+
+function bonustres(){
+
+    let new_got= gotCitiesCSV.split(',')
+    let results = []
+
+    let header = document.createElement('div')
+    header.innerText = 'Kata Bônus - 03'
+    document.body.appendChild(header)
+    
+    const regex = /[a][a]|[e][e]|[i][i]|[o][o]|[u][u]/
+  
+
+    for (let i = 0; i < new_got.length; i++){
+
+        if(regex.test(new_got[i])==true)
+        
+            results.push(new_got[i])
+        
+
+    }
+    
+    let line_results = document.createElement('p')
+    line_results.innerText =  JSON.stringify(results)
+    document.body.appendChild(line_results)
+
+
+}
+bonustres()
+
+
+function bonusquatro(){
+
+    
+    let results = []
+
+    let header = document.createElement('div')
+    header.innerText = 'Kata Bônus - 04'
+    document.body.appendChild(header)
+    
+    const regex = /or$/
+  
+
+    for (let i = 0; i < lotrCitiesArray.length; i++){
+
+        if(regex.test(lotrCitiesArray[i])==true)
+        
+            results.push(lotrCitiesArray[i])
+        
+
+    }
+    
+    let line_results = document.createElement('p')
+    line_results.innerText =  JSON.stringify(results)
+    document.body.appendChild(line_results)
+
+
+}
+bonusquatro()
+
+
+function bonusCinco(){
+
+    let new_best = bestThing.split(' ')
+    let results = []
+
+    let header = document.createElement('div')
+    header.innerText = 'Kata Bônus - 05'
+    document.body.appendChild(header)
+
+    const regex = /^b/
+
+    for (let i = 0; i < new_best.length; i++){
+
+        if(regex.test(new_best[i])==true)
+        
+            results.push(new_best[i])
+        
+
+    }
+
+    
+    let line_results = document.createElement('p')
+    line_results.innerText =  JSON.stringify(results)
+    document.body.appendChild(line_results)
+
+
+}
+bonusCinco()
+
+
+
+function bonusSeis(){
+
+    
+    let results = []
+
+    let header = document.createElement('div')
+    header.innerText = 'Kata Bônus - 06'
+    document.body.appendChild(header)
+    
+    const regex = /Mirkwood/
+  
+
+    
+        results.push(regex.test(lotrCitiesArray))
+        
+            
+
+    
+    
+    let line_results = document.createElement('p')
+    line_results.innerText =  JSON.stringify(results)
+    document.body.appendChild(line_results)
+
+
+}
+bonusSeis()
+
+function bonusSete(){
+
+    
+    let results = []
+
+    let header = document.createElement('div')
+    header.innerText = 'Kata Bônus - 07'
+    document.body.appendChild(header)
+    
+    const regex = /Hollywood/
+  
+
+    
+        results.push(regex.test(lotrCitiesArray))
+        
+            
+
+    
+    
+    let line_results = document.createElement('p')
+    line_results.innerText =  JSON.stringify(results)
+    document.body.appendChild(line_results)
+
+
+}
+bonusSete()
+
+
+
+function bonusOito(){
+
+   
+
+    let header = document.createElement('div')
+    header.innerText = 'Kata Bônus - 08'
+    document.body.appendChild(header)
+
+    
+    let line_results = document.createElement('p')
+    line_results.innerText =  JSON.stringify(lotrCitiesArray.indexOf('Mirkwood'))
+    document.body.appendChild(line_results)
+
+
+}
+bonusOito()
+
+// Escreva uma função que encontre e retorne a primeira cidade do array 'lotrCitiesArray' que tiver mais de uma palavra. Lembre-se de também adicionar os resultados à página.
+
+function bonusNove(){
+
+    let results = []
+
+    let header = document.createElement('div')
+    header.innerText = 'Kata Bônus - 09'
+    document.body.appendChild(header)
+
+    const regex = /\s/g
+
+
+    for(let i = 0; i < lotrCitiesArray.length;i++){
+        
+        if (regex.test(lotrCitiesArray[i])){
+            results.push(lotrCitiesArray[i])
+        }
+        
+    }
+
+    
+    let line_results = document.createElement('p')
+    line_results.innerText =  JSON.stringify(results)
+    document.body.appendChild(line_results)
+
+
+}
+bonusNove()
+
+function bonusDez(){
+
+    let header = document.createElement('div')
+    header.innerText = 'Kata Bônus - 10'
+    document.body.appendChild(header)
+
+    let line_results = document.createElement('p')
+    line_results.innerText =  JSON.stringify(lotrCitiesArray.reverse())
+    document.body.appendChild(line_results)
+
+    
+}
+bonusDez()
+
+
+function bonusOnze(){
+
+    let header = document.createElement('div')
+    header.innerText = 'Kata Bônus - 11'
+    document.body.appendChild(header)
+
+    lotrCitiesArray.sort();
+
+    let line_results = document.createElement('p')
+    line_results.innerText =  JSON.stringify(lotrCitiesArray)
+    document.body.appendChild(line_results)
+
+    
+}
+bonusOnze()
+
+
+
+function bonusDoze(){
+
+    let header = document.createElement('div')
+    header.innerText = 'Kata Bônus - 12'
+    document.body.appendChild(header)
+
+    lotrCitiesArray.sort();
+
+    let results = []
+
+    for(let i = 0; i<lotrCitiesArray.length;i++){
+
+        for(let j = i+1; j<lotrCitiesArray.length;j++){
+
+            if(!lotrCitiesArray[i].includes(results) && lotrCitiesArray[i]<=lotrCitiesArray[j]){
+                results.push(lotrCitiesArray[i])
+            }else{results.push(lotrCitiesArray[j])}
+        }
+    }
+
+
+    let line_results = document.createElement('p')
+    line_results.innerText =  JSON.stringify(results)
+    document.body.appendChild(line_results)
+
+    console.log(results)
+    
+}
+bonusDoze()
